@@ -6,7 +6,7 @@ import HostLogin from './components/HostLogin';
 import ContestantLogin from './components/ContestantLogin';
 import DeveloperLogin from './components/DeveloperLogin';
 import AboutUs from './components/AboutUs';
-import SignUp from './components/SignUp';
+import HostSignUp from './components/HostSignUp';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/contestant-login" element={<ContestantLogin />} />
         <Route path="/developer-login" element={<DeveloperLogin />} />
         <Route path="/about-us" element={<AboutUs/>} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<HostSignUp />} />
       </Routes>
     </Router>
   );
