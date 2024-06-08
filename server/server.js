@@ -74,7 +74,7 @@ app.post('/api/contests', async (req, res) => {
   }
 });
 
-// Additional routes to get data if needed
+
 
 // Get all developers
 app.get('/api/developers', async (req, res) => {

@@ -5,6 +5,10 @@ const contestantSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  contestantId:{
+    type: mongoose.Schema.Types.ObjectId,
+    required: true
+  },
   password: {
     type: String,
     required: true

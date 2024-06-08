@@ -11,7 +11,7 @@ const questionSchema = new mongoose.Schema({
 const contestSchema = new mongoose.Schema({
   hostId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    ref: 'Host',
     required: true
   },
   title: {
@@ -23,12 +23,17 @@ const contestSchema = new mongoose.Schema({
   schedule: Date,
   contestants: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'Contestant'
   }],
-  leaderboard: [{
+  leaderboard: [
+    {
     contestantId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'User'
+      ref: 'Contestant'
+    },
+    username :{
+      type : mongoose.Schema.Types.String,
+      ref : 'Contestant'
     },
     score: Number
   }]
